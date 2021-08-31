@@ -1,36 +1,40 @@
-#include "holberton.h"
-#include "stdio.h"
+#include <stdio.h>
+#include "main.h"
 /**
- * print_to_98 - print all the numbers between the provided number and 98
- * @n: integer to start at
- * Return: Void.
+ * print_to_98 - a function that prints all natural numbers from n to 98
+ * user input's number prints to 98, regardless < 98 or > 98
+ * @n: number input
+ * Return: Always 0 (Success)
  */
-
 void print_to_98(int n)
 {
-	int i = 0;
-
-	if (n > 98)
+	if (n < 98)
 	{
-		for (i = n; i >= 98; i--)
+		while (n <= 98)
 		{
-			if (i != n)
+			printf("%d", n);
+			if (n != 98)
 			{
 				printf(", ");
 			}
-			printf("%d", i);
+			n++;
+		}
+	}
+	else if (n > 98)
+	{
+		while (n >= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n--;
 		}
 	}
 	else
 	{
-		for (i = n; i <= 98 ; i++)
-		{
-			if (i != n)
-			{
-				printf(", ");
-			}
-			printf("%d", i);
-		}
+		printf("98");
 	}
-	putchar('\n');
+	printf("\n");
 }
