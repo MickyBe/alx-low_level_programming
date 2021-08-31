@@ -1,22 +1,30 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * print_alphabet_x10 - a function that prints 10 times the alphabet
+ *print_alphabet_x10 - printing the alphabet in lower case 10x
  *
- * Return: x10 a-z
+ *main - printing the alphabet, a-z, 10 times.
+ *
+ *Return: There is no return value.
  */
+
 void print_alphabet_x10(void)
+
 {
-	int n, co;
+	int a, i;
 
-	co = 0;
+	i = 0;
 
-	while (co < 10)
+	while (i < 10)
 	{
-		for (n = 'a'; n <= 'z'; n++)
+		a = 'a';
+
+		while (a <= 'z')
 		{
-			_putchar(n);
+			_putchar(a);
+			a++;
 		}
-		co++;
+		i++;
 		_putchar('\n');
 	}
 }

@@ -1,1 +1,1 @@
-#Nested loop with c programming
+functions and nested loops

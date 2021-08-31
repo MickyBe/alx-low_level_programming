@@ -1,11 +1,13 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * add - a function that adds two integers and returns the result
- * @one: first number input
- * @two: second number input
- * Return: one + two
+ *add - adds two integers.
+ *@n: keeps track of one integer.
+ *@o: keeps track of the second integer.
+ *Return: returns a single output of two digits being added.
  */
-int add(int one, int two)
+
+int add(int n, int o)
 {
-	return (one + two);
+	return (n + o);
 }
