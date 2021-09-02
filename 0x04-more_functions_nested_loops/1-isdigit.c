@@ -1,16 +1,17 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _isdigit - Check if paramter c represents an digit.
- * @c: Int representing an ascii character
- * Return: Return 1 if it is a digit otherwise return 0.
+ * _isdigit - Check if a character is a digit
+ * @x: The number to be checked
+ *
+ * Return: 1 for a character that will be a digit or 0 for any else
  */
-int _isdigit(int c)
+int _isdigit(int x)
 {
-	if (c >= 48 && c <= 57)
+	if (x >= 48 && x <= 57)
 	{
 		return (1);
 	}
+
 	return (0);
 }
